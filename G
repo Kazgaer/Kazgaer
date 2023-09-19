@@ -1,0 +1,95 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Name", "Midnight")
+local Tab = Window:NewTab("TabName")
+local Section = Tab:NewSection("Section Name")
+Section:NewButton("ButtonText", "ButtonInfo", function()
+Paste the script
+    print("Clicked")
+end) = Value1
+ 
+    game.RunService.RenderStepped:Connect(function()
+        task.wait(1)
+        
+ 
+ 
+ 
+        if getgenv().a == true then
+            if game.Players.LocalPlayer.Character:FindFirstChild("Red") then
+            game.Players.LocalPlayer.Character.Red:Destroy()
+            end
+                if game.Players.LocalPlayer.Character:FindFirstChild("Blue") then
+                game.Players.LocalPlayer.Character.Blue:Destroy()
+                end
+            if game.Players.LocalPlayer.Character:FindFirstChild("Yellow") then
+            game.Players.LocalPlayer.Character.Yellow:Destroy()
+            end
+            end
+        if getgenv().d == true then
+            if game.Lighting:FindFirstChild("Atmosphere") then
+                game.Lighting.Atmosphere:Destroy()
+                end
+                if game.Players.LocalPlayer.Character:FindFirstChild("RussianTripp") then
+                game.Players.LocalPlayer.Character.RussianTripp:Destroy()
+                end
+                if game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("RussianVitamins") then
+                if game.Players.LocalPlayer.Character.HumanoidRootPart.RussianVitamins:FindFirstChild("HeartBeat") then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.RussianVitamins.HeartBeat:Destroy()
+                end           
+                end
+    end
+end)
+end)
+
+ local Button = Section1:CreateButton('Inf Dozerify (Click When You Have Armour', function()
+    for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+        if v.Name == "Dozerify" then
+            v:Destroy()
+        end
+    end
+end)
+ 
+local Toggle = Section1:CreateToggle('Infinite Russian Vitamins', false, Color3.fromRGB(0, 125, 255), 0.25, function(k)
+        getgenv().d = k
+   end)
+ 
+local Toggle = Section1:CreateToggle('Candy Bag', false, Color3.fromRGB(0, 125, 255), 0.25, function(l)
+        getgenv().a = l
+   end)
+ 
+local Button = Section2:CreateButton('Get Legendary Dozer', function()
+    game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Retake.Script.RemoteEvent:FireServer("Legendary",1)
+end)
+ 
+local Button = Section2:CreateButton('Get Deathnote', function()
+    game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Retake.Script.RemoteEvent:FireServer("Legendary",2)
+end)
+ 
+local Button = Section2:CreateButton('Get 3 Sword Style', function()
+    game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Retake.Script.RemoteEvent:FireServer("Legendary",3)
+end)
+ 
+local Button = Section2:CreateButton('Get Ice and fire', function()
+    game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Retake.Script.RemoteEvent:FireServer("Legendary",6)
+end)
+ 
+local Button = Section2:CreateButton('Get Dragon Install (op kit)', function()
+    game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Retake.Script.RemoteEvent:FireServer("Legendary",7)
+end)
+ 
+local Button = Section2:CreateButton('Get null/cmd', function()
+    game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Retake.Script.RemoteEvent:FireServer("Rare",10)
+end)
+ 
+local Button = Section2:CreateButton('Get Unstoppable Force (op)', function()
+    game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Retake.Script.RemoteEvent:FireServer("Legendary",7)
+end)
+ 
+local Button = Section2:CreateButton('Get Air Juggler', function()
+    game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Retake.Script.RemoteEvent:FireServer("Uncommon",31)
+end)
+ 
+local Button = Section2:CreateButton('Get A-train', function()
+    game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Retake.Script.RemoteEvent:FireServer("Rare",34)
+end)
+local Label = Section3:CreateLabel("All item effects in stat changer tab are permanent")
+local Label = Section3:CreateLabel("Retake Mode buttons only work when the gui is open")
